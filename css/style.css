@@ -15,10 +15,12 @@ body {
 
 #hero {
     position: relative;
-    background: url(../images/hero.png) no-repeat 50% 50%;
+    background: url(../images/hero.png) no-repeat;
     height: 496px;
     width: 320px;
-    margin: 10px auto;
+    margin: 10px auto 0;
+    /*width: 100%;*/
+    background-size: cover;
 }
 
 #hero .phone {
@@ -54,9 +56,14 @@ body {
     color: #fff;
 }
 
+.button span {
+    margin-right: 5px;
+}
+
 .button:hover {
     background: #fff;
     color: #ff0000;
+    cursor: pointer;
 }
 
 #hero .button {
@@ -65,8 +72,17 @@ body {
     left: 50px;
 }
 
-@media screen and (max-width: 600px) {
-    #logo img {
-        /*width: 60%;*/
+.full-width {
+    background: #fbc900;
+}
+
+.col-xs-12 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+@media screen and (max-width: 400px) {
+    #hero {
+        width: 100%;
     }
 }
