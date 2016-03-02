@@ -48,7 +48,7 @@ body {
 
 .button {
     background: #ff0000;
-    width: 70%;
+    width: 80%;
     padding: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -69,8 +69,9 @@ body {
 
 #hero .button {
     position: absolute;
-    bottom: 60px;
-    left: 50px;
+    left: 10%;
+    top: 400px;
+    font-size: 18px;
 }
 
 .full-width {
