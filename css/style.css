@@ -24,6 +24,11 @@
     font-family: 'MyriadProRegular', Serif;
 }
 
+a, a:focus {
+    text-decoration: none;
+    border: 0;
+}
+
 body {
     background: #f1f1f1;
 }
@@ -137,17 +142,14 @@ body {
     color: #000;
     font-size: 18px;
     line-height: 30px;
+    background: url(../images/avd_list.png) left center no-repeat;
+    padding-left: 20px;
+    float: left;
 }
 
 .price-list li > span {
     margin-left: 10px;
     font-size: 22px;
-}
-
-.price-list li::before {
-    font-family: 'Glyphicons Halflings';
-    content: "\e067";
-    font-size: 16px;
 }
 
 #price .button {

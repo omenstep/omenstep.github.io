@@ -29,18 +29,18 @@ $(document).ready(function () {
             }
         },
         submitHandler: function (form) {
-            //$.ajax({
-            //    type: "POST",
-            //    url: "form.php",
-            //    data: $(form).serialize(),
-            //    success: function () {
+            /*$.ajax({
+                type: "POST",
+                url: "form.php",
+                data: $(form).serialize(),
+                success: function () {*/
                     $(form).html("<div id='message'></div>");
                     $('#message').html("<h2>Ваша заявка отправлена!</h2>")
                         .hide()
                         .fadeIn(1500, function () {
                             $('#message').append("<img id='checkmark' src='images/Ok.png' />");
-            //            });
-            //    }
+                        //});
+                //}
             });
             return false;
         }
