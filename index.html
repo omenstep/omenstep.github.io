@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Доступное такси</title>
-    <!-- jquery -->
-    <script src="js/jquery.min.js"></script>
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!-- popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- style -->
     <link rel="stylesheet" href="css/style.css"/>
 </head>
@@ -18,7 +17,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12" id="logo">
-            <a href="#">
+            <a class="form-button" href="#callback-form">
                 <img src="images/logo.png" alt="Доступное такси">
             </a>
         </div>
@@ -28,7 +27,7 @@
             <div id="hero">
                 <div class="phone">+7 (499) 677-55-88</div>
                 <div class="text"><span>Доступное такси</span> в Москве</div>
-                <a href="#">
+                <a class="form-button" href="#callback-form">
                     <div class="button">
                         <span class="glyphicon glyphicon-earphone"></span>
                         Заказать обратный звонок
@@ -51,7 +50,7 @@
                         <li><span>за Город 18 руб. / км</span></li>
                     </ul>
                 </div>
-                <a href="#">
+                <a class="form-button" href="#callback-form">
                     <div class="button">
                         <span class="glyphicon glyphicon-earphone"></span>
                         Заказать обратный звонок
@@ -95,12 +94,16 @@
                     <span>«в аэропорт»</span>
                 </div>
                 <div class="text">
-                    <p>Ожидание в аэропорту<br>60 мин включено</p><hr>
-                    <p>Время в пути по Москве<br>2 часа включено</p><hr>
-                    <p>Встреча с табличкой<br>+ 200 руб.</p><hr>
-                    <p>Детское кресло<br>+100 руб.</p><hr>
+                    <p>Ожидание в аэропорту<br>60 мин включено</p>
+                    <hr>
+                    <p>Время в пути по Москве<br>2 часа включено</p>
+                    <hr>
+                    <p>Встреча с табличкой<br>+ 200 руб.</p>
+                    <hr>
+                    <p>Детское кресло<br>+100 руб.</p>
+                    <hr>
                 </div>
-                <a href="#">
+                <a class="form-button" href="#callback-form">
                     <div class="button">
                         <span class="glyphicon glyphicon-earphone"></span>
                         Заказать обратный звонок
@@ -110,8 +113,27 @@
         </div>
     </div>
 </div>
-</div>
 
+<!-- callback form -->
+<form id="callback-form" class="mfp-hide white-popup-block">
+    <h1>Заказать обратный звонок</h1>
+    <fieldset style="border:0;">
+        <p>Перезвоним Вам в течение N минут.</p>
+
+        <label for="phone"></label>
+        <input id="phone" name="phone" type="tel" placeholder="+7 (123) 456-78-90" required="">
+        <input type="submit" value="Перезвоните мне">
+    </fieldset>
+</form>
+
+<!-- jquery -->
+<script src="js/jquery.min.js"></script>
+<!-- popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- input mask -->
+<script src="js/jquery.inputmask.bundle.js"></script>
+<!-- validate -->
+<script src="js/jquery.validate.js"></script>
 <!-- scripts -->
 <script src="js/scripts.js"></script>
 </body>
