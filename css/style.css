@@ -1,7 +1,27 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic);
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 * {
-    font-family: 'PT Sans', Serif;
+    font-family: 'MyriadProRegular', Serif;
 }
 
 body {
@@ -24,6 +44,7 @@ body {
 }
 
 #hero .phone {
+    font-family: "MyriadProSemiBold";
     position: absolute;
     color: #fff;
     font-weight: bold;
@@ -34,10 +55,11 @@ body {
 }
 
 #hero .text {
+    font-family: "MyriadProSemiBold";
     position: absolute;
     color: #fff;
     font-weight: bold;
-    font-size: 33px;
+    font-size: 35px;
     top: 130px;
     left: 5px;
 }
@@ -55,6 +77,8 @@ body {
     border-radius: 5px;
     margin: 0 auto;
     color: #fff;
+    font-size: 18px;
+    text-align: center;
 }
 
 .button span {
@@ -71,16 +95,111 @@ body {
     position: absolute;
     left: 10%;
     top: 400px;
-    font-size: 18px;
 }
 
 .full-width {
     background: #fbc900;
+    padding-bottom: 30px;
 }
 
 .col-xs-12 {
     padding-right: 0 !important;
     padding-left: 0 !important;
+}
+
+
+.taxi-title {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+.taxi-title::before,
+.taxi-title::after {
+    content: url(../images/taxi-emblem.png);
+    position: relative;
+    top: 0;
+}
+
+.price-list ul {
+    margin-left: 2%;
+}
+
+.price-list li {
+    list-style: none;
+    color: #000;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.price-list li > span {
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+.price-list li::before {
+    font-family: 'Glyphicons Halflings';
+    content: "\e067";
+    font-size: 16px;
+}
+
+#price .button {
+    margin-top: 30px;
+}
+
+.top-emblem {
+    background: url(../images/taxi-emblem-line.png) no-repeat 50%;
+    height: 7px;
+    margin-top: -1px;
+}
+
+#advantages {
+    padding-bottom: 60px;
+}
+
+#advantages .item {
+    text-align: center;
+    margin-top: 30px;
+    color: #000;
+}
+
+#advantages .item span {
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#info {
+    padding-bottom: 30px;
+}
+
+#info .title {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0;
+    color: #000;
+}
+
+#info .title span {
+    font-family: 'MyriadProSemiBold', Serif;
+    text-transform: uppercase;
+}
+
+#info .text p {
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+}
+
+#info .text hr {
+    background-color: #fbc900;
+    width: 20%;
+    height: 2px;
 }
 
 @media screen and (max-width: 414px) {
