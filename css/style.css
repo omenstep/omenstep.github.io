@@ -29,6 +29,10 @@ a, a:focus {
     border: 0;
 }
 
+a:hover {
+    text-decoration: none !important;
+}
+
 body {
     background: #f1f1f1;
 }
@@ -89,12 +93,6 @@ body {
 
 .button span {
     margin-right: 5px;
-}
-
-.button:hover {
-    background: #fff;
-    color: #ff0000;
-    cursor: pointer;
 }
 
 #hero .button {
