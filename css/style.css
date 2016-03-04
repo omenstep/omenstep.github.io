@@ -2,7 +2,7 @@
 @font-face {
     font-family: "MyriadProSemiBold";
     src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
-    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"),
     url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
     url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
     font-style: normal;
@@ -13,12 +13,14 @@
 @font-face {
     font-family: "MyriadProRegular";
     src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
-    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"),
     url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
     url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
+
+/* DEFAULT */
 
 * {
     font-family: 'MyriadProRegular', Serif;
@@ -36,6 +38,46 @@ a:hover {
 body {
     background: #f1f1f1;
 }
+
+.button,
+.white-popup-block input[type=submit] {
+    background: #ff0000;
+    width: 260px;
+    padding: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+.button span {
+    margin-right: 5px;
+}
+
+.full-width {
+    background: #fbc900;
+    padding-bottom: 30px;
+}
+
+.col-xs-12 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.top-emblem {
+    background: url(../images/taxi-emblem-line.png) no-repeat 50%;
+    height: 7px;
+    margin-top: -1px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* HERO */
 
 #logo,
 #hero {
@@ -77,41 +119,12 @@ body {
     text-transform: uppercase;
 }
 
-.button,
-.white-popup-block input[type=submit] {
-    background: #ff0000;
-    width: 260px;
-    padding: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    margin: 0 auto;
-    color: #fff;
-    font-size: 18px;
-    text-align: center;
-}
-
-.button span {
-    margin-right: 5px;
-}
-
 #hero .button {
     position: absolute;
     left: 50%;
     top: 400px;
     margin-left: -130px;
 }
-
-.full-width {
-    background: #fbc900;
-    padding-bottom: 30px;
-}
-
-.col-xs-12 {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
-
 
 .taxi-title {
     width: 80%;
@@ -129,6 +142,8 @@ body {
     position: relative;
     top: 0;
 }
+
+/* PRICELIST */
 
 .price-list ul {
     width: 70%;
@@ -154,11 +169,7 @@ body {
     margin-top: 30px;
 }
 
-.top-emblem {
-    background: url(../images/taxi-emblem-line.png) no-repeat 50%;
-    height: 7px;
-    margin-top: -1px;
-}
+/* ADVANTAGES */
 
 #advantages {
     padding-bottom: 60px;
@@ -176,6 +187,8 @@ body {
     font-size: 20px;
     margin-top: 5px;
 }
+
+/* INFO */
 
 #info {
     padding-bottom: 30px;
@@ -205,6 +218,8 @@ body {
     height: 2px;
 }
 
+/* popup */
+
 .white-popup-block {
     background: #FFF;
     padding: 20px 30px;
@@ -231,11 +246,12 @@ body {
     border: 0;
 }
 
-
 .error {
     margin-top: 10px;
     color: red;
 }
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 768px) {
     .price-list ul {
@@ -253,6 +269,7 @@ body {
     #hero {
         width: 100%;
     }
+
     .price-list ul {
         width: 80%;
     }
