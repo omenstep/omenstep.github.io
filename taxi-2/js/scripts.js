@@ -39,6 +39,8 @@ $(document).ready(function () {
         });
     });
 
+
+
     $('#date').focus(function() {
         this.blur();
     });
