@@ -28,26 +28,8 @@ $(document).ready(function () {
             }
         });
     });
-    $(function () {
-        $('#time').datetimepicker({
-            locale: 'ru',
-            format: 'HH:mm',
-            widgetPositioning: {
-                horizontal: 'right',
-                vertical: 'bottom'
-            }
-        });
-    });
 
 
-
-    $('#date').focus(function() {
-        this.blur();
-    });
-
-    $('#time').focus(function() {
-        this.blur();
-    });
 
     //$("#callback-form").validate({
     //    rules: {
