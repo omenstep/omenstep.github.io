@@ -311,14 +311,14 @@ hr {
 @media screen and (max-width: 600px) {
     #logo {height: 375px;}
     #logo .top-text {font-size: 1.5em; margin-top: 60px;}
-    .price-list ul {
-        width: 55%;
-    }
+    .price-list ul {width: 55%;}
+    #advantages .items, #bottom .items {width: 50%}
 }
 
 @media screen and (max-width: 414px) {
     #logo {height: 280px;}
     #logo .top-text {font-size: 1.3em; margin-top: 35px;}
+    #advantages .items, #bottom .items {width: 75%}
     .price-list ul {
         width: 80%;
     }
@@ -326,6 +326,7 @@ hr {
 
 @media screen and (max-width: 375px) {
     #logo .top-text {font-size: 1.2em; margin-top: 20px;}
+    #bottom .items {width: 90%}
     .price-list ul {
         width: 90%;
     }
@@ -334,6 +335,9 @@ hr {
 @media screen and (max-width: 321px) {
     #logo .top-text {font-size: 1.1em; margin-top: 10px;}
     #logo {height: 220px;}
+    #advantages .items, #bottom .items {width: 100%}
+    .callback-block input[type=submit] {font-size: .9em}
+    #online-order textarea { font-size: 14px; }
     .price-list ul {
         width: 100%;
     }
