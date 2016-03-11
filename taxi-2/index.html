@@ -72,11 +72,11 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="callback-block">
-                    <form>
+                    <form id="callback">
                         <fieldset style="border:0;">
                             <p>Мы Вам перезвоним в течение 45 секунд. Это бесплатно!</p>
 
-                            <label for="phone"></label>
+                            <label for="phone" class="error"></label>
                             <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required="">
                             <input type="submit" value="Заказать обратный звонок">
                         </fieldset>
@@ -91,7 +91,8 @@
                 <div class="title">
                     Хотите заказать такси онлайн?
                 </div>
-                <form>
+                <div id="message"></div>
+                <form id="order">
                     <input type="text" name="name" placeholder="Как Вас зовут?">
                     <input type="tel" name="phone" placeholder="Ваш номер телефона" id="phone-mask">
                     <input type="tel" name="address" placeholder="По какому адресу подать такси?">
@@ -147,9 +148,6 @@
 <script src="js/jquery.min.js"></script>
 <!-- bootstrap -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/moment.js"></script>
-<script src="js/locale/ru.js"></script>
-<script src="js/bootstrap-datetimepicker.min.js"></script>
 <!-- input mask -->
 <script src="js/jquery.inputmask.bundle.js"></script>
 <!-- validate -->
