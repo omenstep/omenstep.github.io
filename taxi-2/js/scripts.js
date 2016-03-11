@@ -39,6 +39,14 @@ $(document).ready(function () {
         });
     });
 
+    $('#date').focus(function() {
+        this.blur();
+    });
+
+    $('#time').focus(function() {
+        this.blur();
+    });
+
     //$("#callback-form").validate({
     //    rules: {
     //        phone: {
